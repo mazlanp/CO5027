@@ -2,11 +2,11 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head runat="server">
-<meta content="text/aspx; charset=utf-8" http-equiv="Content-Type" />
+
 <link href="~/css/style.css" rel="stylesheet" type="text/css" media="screen"/>
-    <title></title>
+    <title>default</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -20,7 +20,7 @@
 			<ul>				
 				<li><a class="active" href="default.aspx">Home</a></li>
 				<li><a>Product</a></li>
-				<li><a>My Smart Kitchen</a></li>
+				<li><a>About Us</a></li>
 				<li><a href="contact.aspx">Contact</a></li>
 				<li><a>Login</a></li>
 			</ul>
@@ -57,6 +57,7 @@
 				<li><a href="http://validator.w3.org/check?uri=referer">Validate HTML</a></li>
 				<li><a href="http://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a></li>
 				<li><a href="http://achecker.ca/checker/?uri=referer">Check WCAG</a></li>
+                <li><a>Admin</a></li>
 			</ul>
 		</div>
 		<div id="footer">

@@ -13,7 +13,7 @@ h3 {
 }
 
 #wrap {
-	background: #cfd8dc;
+	background: #455a64;
 	height: 200px;
 }
 
@@ -50,7 +50,7 @@ h3 {
     list-style-type: none;
     padding: 0;
     overflow: hidden;
-    background-color: #cfd8dc;
+    background-color: transparent;
 	position: relative;
 	float: right;
 	margin: 70px 0;
@@ -70,8 +70,9 @@ h3 {
 }
 
 #top-navigation li a:hover {
-    background-color: #ffffff;
-    color: #ff0099;
+    background-color: #555;
+    color: #ffffff;
+    font-size: 20px;
 }
 
 /*---------------------------------------
@@ -248,7 +249,7 @@ input[type=submit]:hover {
 }
 
 #box-logo {
-	float: left-top;
+	float: left;
 	margin: 10px;
 	padding-top: 10px;
 }
@@ -271,7 +272,7 @@ input[type=submit]:hover {
 	text-align:center; 
 	font-size:14px; 
 	font-weight: bold;
-	color: #37474f  ;
+	color: #cfd8dc;
 }
 
 #validater ul {
