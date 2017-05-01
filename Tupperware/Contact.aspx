@@ -16,7 +16,8 @@
 		<asp:Label ID="Label2" runat="server" Text="Email"></asp:Label>
 
 		<asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtEmail" ErrorMessage="*Email is required" ForeColor="Red"></asp:RequiredFieldValidator>
-		&nbsp;<asp:textbox runat="server" id="txtEmail"></asp:textbox>
+		&nbsp;<asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtEmail" ErrorMessage="Invalid Email!"></asp:RegularExpressionValidator>
+        <asp:textbox runat="server" id="txtEmail"></asp:textbox>
 
 		
 		<asp:Label ID="Label3" runat="server" Text="Subject"></asp:Label>
