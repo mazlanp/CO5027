@@ -23,7 +23,7 @@
 		<asp:Label ID="Label3" runat="server" Text="Subject"></asp:Label>
 
 		
-		<asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="*Subject is required" ForeColor="Red"></asp:RequiredFieldValidator>
+		<asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtSubject" ErrorMessage="*Subject is required" ForeColor="Red"></asp:RequiredFieldValidator>
 
 		
 		<asp:textbox runat="server" id="txtSubject"></asp:textbox>
