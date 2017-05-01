@@ -94,6 +94,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Contact.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -108,7 +109,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Contact.aspx" />
     <Content Include="css\style.css" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
