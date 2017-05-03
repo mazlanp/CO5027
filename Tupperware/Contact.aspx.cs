@@ -24,26 +24,25 @@ namespace Tupperware
             smtpClient.Host = "smtp.gmail.com";
             smtpClient.Port = 587;
 
-            System.Net.NetworkCredential credentials =
-                new System.Net.NetworkCredential("tapecogreen@gmail.com", "P@55word");
+          
+            System.Net.NetworkCredential credentials = new System.Net.NetworkCredential("tapecogreen@gmail.com", "Tupperware");
 
             smtpClient.Credentials = credentials;
 
-            MailMessage msg = new MailMessage("tapecogreen@gmail.com", txtEmail.Text);
-            msg.Subject = "Name: " + txtName.Text + " Subject: " + txtSubject.Text;
-            msg.Body = txtEmail.Text + "    " + txtMsg.Text;
-            smtpClient.Send(msg);
+            MailMessage msg = new MailMessage(txtEmail.Text, "tapecogreen@gmail.com");
+            msg.Subject = "Subject: " + txtSubject.Text;
+            msg.Body = txtMsg.Text;
+
 
             try
             {
                 smtpClient.Send(msg);
-                litResult.Text =
-                    "<p>Success, mail sent using SMTP with secure connection and credentials</p>";
+                litResult.Text = "<p>Success, mail sent using SMTP with secure connection and credentials</p>";
             }
             catch (Exception ex)
             {
-                litResult.Text =
-                    "<p>Send failed: " + ex.Message + ":" + ex.InnerException + "</p>";
+                //display the full error to the user
+                litResult.Text = "<p>Send failed: " + ex.Message + ":" + ex.InnerException + "</p>";
             }
         }
     }
