@@ -25,11 +25,11 @@ namespace Tupperware
             smtpClient.Port = 587;
 
             System.Net.NetworkCredential credentials =
-                new System.Net.NetworkCredential("tupperwear.green@gmail.com", "Tupperwear");
+                new System.Net.NetworkCredential("tapecogreen@gmail.com", "P@55word");
 
             smtpClient.Credentials = credentials;
 
-            MailMessage msg = new MailMessage("tupperwear.green@gmail.com", txtEmail.Text);
+            MailMessage msg = new MailMessage("tapecogreen@gmail.com", txtEmail.Text);
             msg.Subject = "Name: " + txtName.Text + " Subject: " + txtSubject.Text;
             msg.Body = txtEmail.Text + "    " + txtMsg.Text;
             smtpClient.Send(msg);
