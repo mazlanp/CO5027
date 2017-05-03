@@ -31,7 +31,7 @@ namespace Tupperware
 
             MailMessage msg = new MailMessage(txtEmail.Text, "tapecogreen@gmail.com");
             msg.Subject = "Subject: " + txtSubject.Text;
-            msg.Body = txtMsg.Text;
+            msg.Body = txtEmail.Text + "\r\n" + txtMsg.Text;
 
 
             try
