@@ -224,7 +224,7 @@ input[type=submit]:hover {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
-    height: 570px;
+    height: 214px;
 }
 
 #map {
@@ -232,6 +232,17 @@ input[type=submit]:hover {
 	width: 900px;
 	height: 400px;
     padding: 0;
+}
+
+/*---------------------------------------
+    *Login 
+-----------------------------------------*/
+
+#login {
+	width: 600px;
+	height: 290px;
+	float: left;
+	margin-left: 10px;
 }
 
 /*---------------------------------------
