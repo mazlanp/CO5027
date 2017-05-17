@@ -3,28 +3,80 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-     <div id="contact-wrap">
-     <div id="login">
+    <div id="contact-wrap-login">
+    <div id="formReg">
 
-    <h3>Log In</h3>
-
-	<div class="container">
-&nbsp;<asp:Label ID="Label" runat="server" Text="Username"></asp:Label>
-        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtName" ErrorMessage="*UserID is required" ForeColor="Red"></asp:RequiredFieldValidator>
-        <asp:textbox runat="server" id="txtLoginEmail"></asp:textbox>
-
-		<asp:Label ID="Label3" runat="server" Text="Password"></asp:Label>
-        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtEmail" ErrorMessage="*Enter your password here" ForeColor="Red"></asp:RequiredFieldValidator>
-&nbsp;<asp:textbox runat="server" id="txtLoginPassword"></asp:textbox>
-
-		<asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click" />
-
-		&nbsp;<asp:Literal ID="litLoginError" runat="server"></asp:Literal>
-        &nbsp;&nbsp;
-	
-	    
-
+     <div>
+        <h3>Register a new user</h3>
     
-    
-  
+        <hr />                
+            <asp:Literal runat="server" ID="StatusMessage" />
+        <div style="margin-bottom:10px">
+            <asp:Label runat="server" AssociatedControlID="Username">User name</asp:Label>
+            <div>
+                <asp:TextBox runat="server" ID="Username" Width="375px" />                
+            </div>
+        </div>
+        <div style="margin-bottom:10px">
+            <asp:Label runat="server" AssociatedControlID="Password">Password</asp:Label>
+            <div>
+                <asp:TextBox runat="server" ID="Password" TextMode="Password" />                
+            </div>
+        </div>
+        <div style="margin-bottom:10px">
+            <asp:Label runat="server" AssociatedControlID="ConfirmPassword">Confirm password</asp:Label>
+            <div>
+                <asp:TextBox runat="server" ID="ConfirmPassword" TextMode="Password" />                
+            </div>
+        </div>
+        <div>
+            <div>
+                <asp:Button runat="server" OnClick="CreateUser_Click" Text="Register" ID="CreateUser" />
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="formLog">
+
+        <div>
+         <h3>Login</h3>
+         
+         <hr />
+            <asp:PlaceHolder runat="server" ID="LoginStatus" Visible="false">
+            <p>
+               <asp:Literal runat="server" ID="StatusText" />
+            </p>
+         </asp:PlaceHolder>
+         <asp:PlaceHolder runat="server" ID="LoginForm" Visible="false">
+            <div style="margin-bottom: 10px">
+               <asp:Label runat="server" AssociatedControlID="LogName">User name</asp:Label>
+               <div>
+                  <asp:TextBox runat="server" ID="LogName" />
+               </div>
+            </div>
+            <div style="margin-bottom: 10px">
+               <asp:Label runat="server" AssociatedControlID="Password">Password</asp:Label>
+               <div>
+                  <asp:TextBox runat="server" ID="TextBox2" TextMode="Password" />
+               </div>
+            </div>
+            <div style="margin-bottom: 10px">
+               <div>
+                  <asp:Button runat="server" OnClick="SignIn" Text="Log in" />
+               </div>
+            </div>
+         </asp:PlaceHolder>
+         <asp:PlaceHolder runat="server" ID="LogoutButton" Visible="false">
+            <div>
+               <div>
+                  <asp:Button runat="server" OnClick="SignOut" Text="Log out" />
+               </div>
+            </div>
+         </asp:PlaceHolder>
+      </div>
+      </div>
+
+    </div>
+ 
 </asp:Content>

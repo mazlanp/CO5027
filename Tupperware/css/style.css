@@ -10,6 +10,8 @@ body {
 
 h3 {
 	text-transform: uppercase;
+    height: 0px;
+    font-weight:bold;
 }
 
 #wrap {
@@ -76,6 +78,24 @@ h3 {
 }
 
 /*---------------------------------------
+    *Admin   
+-----------------------------------------*/
+
+#content-wrap-admin {
+	width:1000px;
+	margin: 0 auto;
+	padding: 10px 40px;
+	border: none;
+}
+
+#content-wrap-edit {
+	width:1000px;
+	margin: 0 auto;
+	padding: 10px 40px;
+	border: none;
+}
+
+/*---------------------------------------
     *Index   
 -----------------------------------------*/
 
@@ -130,6 +150,7 @@ div.gallery img {
 div.desc {
     padding: 15px;
     text-align: center;
+    height: 35px;
 }
 
 * {
@@ -159,6 +180,32 @@ div.desc {
     content: "";
     display: table;
     clear: both;
+}
+
+#Repeater1 {
+    display: inline-block;
+}
+
+/*---------------------------------------
+    *Product   
+-----------------------------------------*/
+
+#content-wrap-product {
+	width:1000px;
+	margin: 0 auto;
+	padding: 10px 40px;
+	border: none;
+}
+
+/*---------------------------------------
+    *About Us 
+-----------------------------------------*/
+
+#content-wrap-aboutus {
+	width:1000px;
+	margin: 0 auto;
+	padding: 10px 40px;
+	border: none;
 }
 
 /*---------------------------------------
@@ -224,7 +271,6 @@ input[type=submit]:hover {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
-    height: 214px;
 }
 
 #map {
@@ -238,11 +284,26 @@ input[type=submit]:hover {
     *Login 
 -----------------------------------------*/
 
-#login {
-	width: 600px;
-	height: 290px;
-	float: left;
-	margin-left: 10px;
+#contact-wrap-login {
+    width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+    padding: 10px 40px;
+    border: none;
+}
+
+#formReg {
+    width: 400px;
+    height: 376px;
+    float: left;
+    margin-left: 10px;
+}
+
+#formLog {
+    width: 400px;
+    height: 376px;
+    float: right;
+    margin-right: 10px;
 }
 
 /*---------------------------------------

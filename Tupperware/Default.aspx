@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Tupperware.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Tupperware.Default" %>
+﻿<%@ Page Title="Default" Language="C#" MasterPageFile="~/Tupperware.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Tupperware.Default" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -20,13 +20,29 @@
 	</div>
 		<h3>Instock</h3>
 		
+        <asp:Repeater ID="Repeater1" runat="server" DataSourceID="rptrProducts">
+                        <HeaderTemplate>
+                            <div>
+                        </HeaderTemplate>
+                            <ItemTemplate>
+                                <div>
+                                    <a href="<%# Eval("Id", "Product.aspx?Id={0}") %>">
+                                        <%#Eval ("Name") %>
+                                    </a>
+                                </div>
+                            </ItemTemplate>
+                         <FooterTemplate>
+                         </div>
+                         </FooterTemplate>
+                </asp:Repeater>
+                <asp:SqlDataSource ID="rptrProducts" runat="server" ConnectionString="<%$ ConnectionStrings:db_1525607_co5027ConnectionString %>" SelectCommand="SELECT * FROM [tblProductList]"></asp:SqlDataSource>
+
 		<div class="responsive">
 			<div class="gallery">
 				<a target="_blank" href="image/Frosty-Blue-Collection.png">
 					<img src="image/Frosty-Blue-Collection.png" alt="frosty-blue-collection" width="300" height="200"/>
 				</a>
-				<div class="desc">Frosty Blue Collection</div>
-				<div class="desc">BND 52.64</div>
+				<div class="desc">Frosty Blue Collectione Collection</div>
 			</div>
 		</div>
 		
@@ -36,7 +52,6 @@
 					<img src="image/XTreme-Meal-Box.jpg" alt="xtreme-meal-box" width="300" height="200"/>
 				</a>
 				<div class="desc">X-Tream Meal Box</div>
-				<div class="desc">BND 19.40</div>
 			</div>
 		</div>
 		
@@ -46,7 +61,6 @@
 			  <img src="image/XTreme-Cafe-Mug.jpg" alt="xtreme-cafe-mug" width="300" height="200"/>
 			</a>
 			<div class="desc">X-Treme Cafe Mug</div>
-			<div class="desc">BND 25.16</div>
 		  </div>
 		</div>
 		
@@ -56,7 +70,6 @@
 			  <img src="image/Bread-N-Buddy.png" alt="bread-n'buddy" width="300" height="200"/>
 			</a>
 			<div class="desc">Bread N'Buddy</div>
-			<div class="desc">BND 25.16</div>
 		  </div>
 		</div>
 		
@@ -66,7 +79,6 @@
 			  <img src="image/Kiddie-Tumbler-Sky.png" alt="kiddie-tumbler-sky" width="300" height="200"/>
 			</a>
 			<div class="desc">Kiddie Tumbler Sky</div>
-			<div class="desc">BND 18.87</div>
 		  </div>
 		</div>
 		
@@ -76,7 +88,6 @@
 			  <img src="image/T-For-2.png" alt="t-for-2" width="300" height="200"/>
 			</a>
 			<div class="desc">T For 2</div>
-			<div class="desc">BND 31.46</div>
 		  </div>
 		</div>
 		
@@ -86,7 +97,6 @@
 			  <img src="image/Cutie-Bag.png" alt="cutie-bag" width="300" height="200"/>
 			</a>
 			<div class="desc">Cutie Bag</div>
-			<div class="desc">BND 36.16</div>
 		  </div>
 		</div>
 		
@@ -96,7 +106,6 @@
 			  <img src="image/Slim-Line-2L.png" alt="slim-line-2l" width="300" height="200"/>
 			</a>
 			<div class="desc">Slim Line 2L</div>
-			<div class="desc">BND 16.78</div>
 		  </div>
 		</div>
 		

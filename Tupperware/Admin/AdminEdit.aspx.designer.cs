@@ -7,27 +7,27 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Tupperware {
+namespace Tupperware.Admin {
     
     
-    public partial class Default {
+    public partial class AdminEdit {
         
         /// <summary>
-        /// Repeater1 control.
+        /// GridView1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater Repeater1;
+        protected global::System.Web.UI.WebControls.GridView GridView1;
         
         /// <summary>
-        /// rptrProducts control.
+        /// productView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource rptrProducts;
+        protected global::System.Web.UI.WebControls.SqlDataSource productView;
     }
 }

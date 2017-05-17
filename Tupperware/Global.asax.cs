@@ -19,7 +19,7 @@ namespace Tupperware
                 DebugPath = "~/Scripts/jquery-" + JQueryVer + ".js",
                 CdnPath = "http://ajax.aspnetcdn.com/ajax/jQuery/jquery-" + JQueryVer + ".min.js",
                 CdnDebugPath = "http://ajax.aspnetcdn.com/ajax/jQuery/jquery-" + JQueryVer + ".js",
-                CdnSupportSecureConnection = true,
+                CdnSupportsSecureConnection = true,
                 LoadSuccessExpression = "window.jQuery"
             });
         }
